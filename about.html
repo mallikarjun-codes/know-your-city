@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Know Your City</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="flex flex-col min-h-screen">
+
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+          </svg>
+          <span class="text-2xl font-bold text-gray-800">Know Your City</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="home.html" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="places.html" class="text-gray-600 hover:text-blue-600">Places</a>
+          <a href="event.html" class="text-gray-600 hover:text-blue-600">Events</a>
+          <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+          <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 shadow">Login</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow">
+      <section class="bg-white py-16">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900">About <span class="text-blue-600">Know Your City</span></h1>
+          <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+            Welcome to <strong>Know Your City</strong>, your personal guide to exploring <strong>Belagavi</strong> like never before! 🌆✨
+          </p>
+        </div>
+      </section>
+
+      <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+          <!-- Text -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900">Why Know Your City?</h2>
+            <p class="mt-4 text-gray-600 leading-relaxed">
+              Whether you’re a local resident or a first-time visitor, our platform helps you:
+            </p>
+            <ul class="mt-6 space-y-3 text-gray-700">
+              <li>🏰 Discover <strong>historical landmarks</strong> like Belagavi Fort</li>
+              <li>🌊 Explore <strong>natural wonders</strong> such as Gokak Falls</li>
+              <li>🍮 Taste authentic delicacies like the famous <strong>Belagavi Kunda</strong></li>
+              <li>🎉 Stay updated with <strong>local events and festivals</strong></li>
+            </ul>
+          </div>
+
+          <!-- Image -->
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://placehold.co/600x400/3498db/ffffff?text=Explore+Belagavi" alt="Explore Belagavi" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-16">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+          <h2 class="text-3xl font-bold text-gray-900">Our Mission 🚀</h2>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Our goal is to make exploring your city <strong>easy, smart, and fun</strong>. With AI-powered answers, you can instantly find the best places, hidden gems, and weekend plans — all in one place.
+          </p>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            We are starting with <strong>Belagavi</strong>, but soon we aim to expand to other cities like <strong>Hubli, Dharwad, Bangalore</strong>, and beyond.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+      <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+        <p>&copy; 2025 Know Your City. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* General Reset */
+/* === Navigation Bar === */
+/* === Navigation Bar (Reduced Height) === */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.1rem; /* reduced height */
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar .logo {
+  font-size: 1.3rem; /* slightly smaller logo text */
+  font-weight: 700;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* reduced spacing */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 0.95rem; /* slightly smaller links */
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+.nav-links li a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #3b82f6;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  color: #4b5563;
+  font-size: 1.1rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem 1.2rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+  color: white;
+}
+
+.badge.history { background: #f59e0b; }
+.badge.nature { background: #10b981; }
+.badge.heritage { background: #6366f1; }
+.badge.spiritual { background: #ef4444; }
+.badge.adventure { background: #34d399; }
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 0.9rem;
+}
+
