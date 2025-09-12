@@ -24,126 +24,104 @@
     }
   </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 text-gray-800">
   <div class="flex flex-col min-h-screen">
 
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+    <header class="bg-white/70 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="home.html" class="flex items-center space-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
           </svg>
-          <span class="text-2xl font-bold text-gray-800">Know Your City</span>
+          <span class="text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Know Your City</span>
         </a>
         <div class="hidden md:flex items-center space-x-6">
-          <a href="home.html" class="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="places.html" class="text-blue-600 font-semibold">Places</a>
-          <a href="event.html" class="text-gray-600 hover:text-blue-600">Events</a>
-          <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-          <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 shadow">Login</a>
+          <a href="home.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+          <a href="places.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Places</a>
+          <a href="event.html" class="text-gray-600 hover:text-blue-600 transition">Events</a>
+          <a href="about.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+          <a href="login.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:scale-105 shadow-lg transition">Login</a>
         </div>
-        <!-- Mobile menu button -->
-        <button class="md:hidden text-gray-600">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
       </nav>
     </header>
 
     <!-- Main Content -->
     <main class="flex-grow">
-      <div class="container mx-auto px-6 py-12">
+      <div class="container mx-auto px-6 py-16">
         <div class="max-w-3xl mx-auto text-center">
-          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Famous Places in Belagavi</h1>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-relaxed bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent pb-2">
+            Famous Places in Belagavi
+          </h1>
           <p class="mt-4 text-lg text-gray-600">Discover history, nature, and spiritual landmarks across the city.</p>
         </div>
 
         <!-- Places Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
           
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="Belgaum_Fort.jpg" alt="Belagavi Fort" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Belagavi Fort</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">HISTORY</span>
-              <p class="mt-2 text-gray-600">A historic fort at the city’s heart, built in the 13th century with temples, mosques, and Jain shrines inside.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="Belgaum_Fort.jpg" alt="Belagavi Fort" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 px-3 py-1 rounded-full">HISTORY</span>
+              <h3 class="mt-3 text-2xl font-bold">Belagavi Fort</h3>
+              <p class="mt-2 text-gray-200">A 13th-century fort with temples, mosques, and Jain shrines inside the heart of the city.</p>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="gokak_falls.jpg" alt="Gokak Falls" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Gokak Falls</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">NATURE</span>
-              <p class="mt-2 text-gray-600">A breathtaking waterfall on the Ghataprabha River, often compared to the Niagara Falls of Karnataka.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="gokak_falls.jpg" alt="Gokak Falls" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-green-600 to-emerald-500 px-3 py-1 rounded-full">NATURE</span>
+              <h3 class="mt-3 text-2xl font-bold">Gokak Falls</h3>
+              <p class="mt-2 text-gray-200">A breathtaking waterfall on the Ghataprabha River, called the Niagara of Karnataka.</p>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="kamal_basti.jpeg" alt="Kamal Basti" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Kamal Basti</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-yellow-600 bg-yellow-100 px-3 py-1 rounded-full">HERITAGE</span>
-              <p class="mt-2 text-gray-600">A 10th century Jain temple inside Belagavi Fort, known for its lotus-shaped dome carvings.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="kamal_basti.jpeg" alt="Kamal Basti" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 px-3 py-1 rounded-full">HERITAGE</span>
+              <h3 class="mt-3 text-2xl font-bold">Kamal Basti</h3>
+              <p class="mt-2 text-gray-200">A 10th century Jain temple inside Belagavi Fort, famous for lotus-shaped dome carvings.</p>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="jamboti_hills.webp" alt="Jamboti Hills" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Jamboti Hills</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-red-600 bg-red-100 px-3 py-1 rounded-full">NATURE</span>
-              <p class="mt-2 text-gray-600">A lush green hill station near Belagavi, famous for its forests, wildlife, and the origin of Mandovi River.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="jamboti_hills.webp" alt="Jamboti Hills" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-red-600 to-pink-600 px-3 py-1 rounded-full">NATURE</span>
+              <h3 class="mt-3 text-2xl font-bold">Jamboti Hills</h3>
+              <p class="mt-2 text-gray-200">A lush green hill station near Belagavi, origin of the Mandovi River.</p>
             </div>
           </div>
 
           <!-- Card 5 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="Military_Mahadeva_Temple.jpg" alt="Military Mahadeva Temple" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Military Mahadeva Temple</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-purple-600 bg-purple-100 px-3 py-1 rounded-full">SPIRITUAL</span>
-              <p class="mt-2 text-gray-600">A peaceful Lord Shiva temple surrounded by greenery, maintained by the Indian Army.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="Military_Mahadeva_Temple.jpg" alt="Military Mahadeva Temple" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 px-3 py-1 rounded-full">SPIRITUAL</span>
+              <h3 class="mt-3 text-2xl font-bold">Military Mahadeva Temple</h3>
+              <p class="mt-2 text-gray-200">A peaceful Lord Shiva temple surrounded by greenery, maintained by the Indian Army.</p>
             </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:-translate-y-2 transition">
-            <div class="relative w-full h-48">
-              <img src="vajrapoha_falls.webp" alt="Vajrapoha Falls" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <h3 class="text-2xl font-bold text-white">Vajrapoha Falls</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <span class="text-sm font-semibold text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">ADVENTURE</span>
-              <p class="mt-2 text-gray-600">A hidden gem waterfall in the deep forests near Khanapur, best visited during the monsoon.</p>
+          <div class="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition">
+            <img src="vajrapoha_falls.webp" alt="Vajrapoha Falls" class="w-full h-60 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+            <div class="absolute bottom-0 p-6 text-white z-10">
+              <span class="text-xs font-semibold bg-gradient-to-r from-emerald-600 to-green-500 px-3 py-1 rounded-full">ADVENTURE</span>
+              <h3 class="mt-3 text-2xl font-bold">Vajrapoha Falls</h3>
+              <p class="mt-2 text-gray-200">A hidden gem waterfall in the forests near Khanapur, best visited during monsoon.</p>
             </div>
           </div>
 
@@ -152,8 +130,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200">
-      <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+    <footer class="bg-white border-t border-gray-200 shadow-inner">
+      <div class="container mx-auto px-6 py-6 text-center text-gray-500">
         <p>&copy; 2025 Know Your City. All rights reserved.</p>
       </div>
     </footer>

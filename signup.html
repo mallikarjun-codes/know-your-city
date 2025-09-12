@@ -26,14 +26,17 @@
 </head>
 <body class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 min-h-screen flex flex-col">
 
-  <!-- Navbar (copied from login.html) -->
+  <!-- Navbar -->
   <header class="bg-white/90 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="home.html" class="flex items-center space-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
         </svg>
-        <span class="text-2xl font-bold text-gray-800">Know Your City</span>
+        <!-- Gradient Text Logo -->
+        <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+          Know Your City
+        </span>
       </a>
       <div class="hidden md:flex items-center space-x-6">
         <a href="home.html" class="text-gray-600 hover:text-blue-600">Home</a>
@@ -81,7 +84,7 @@
     </div>
   </main>
 
-  <!-- Footer (same as login.html) -->
+  <!-- Footer -->
   <footer class="bg-white border-t border-gray-200 py-4 text-center text-gray-600">
     &copy; 2025 Know Your City. All rights reserved.
   </footer>

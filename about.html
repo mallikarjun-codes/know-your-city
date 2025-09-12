@@ -32,13 +32,13 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
           </svg>
-          <span class="text-2xl font-bold text-gray-800">Know Your City</span>
+          <span class="text-2xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Know Your City</span>
         </a>
         <div class="hidden md:flex items-center space-x-6">
           <a href="home.html" class="text-gray-600 hover:text-blue-600">Home</a>
           <a href="places.html" class="text-gray-600 hover:text-blue-600">Places</a>
           <a href="event.html" class="text-gray-600 hover:text-blue-600">Events</a>
-          <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+          <a href="about.html" class="text-blue-600 font-semibold">About</a>
           <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 shadow">Login</a>
         </div>
         <!-- Mobile menu button -->
@@ -50,58 +50,75 @@
       </nav>
     </header>
 
-    <!-- Main -->
-    <main class="flex-grow">
-      <section class="bg-white py-16">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900">About <span class="text-blue-600">Know Your City</span></h1>
-          <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-            Welcome to <strong>Know Your City</strong>, your personal guide to exploring <strong>Belagavi</strong> like never before! 🌆✨
-          </p>
-        </div>
-      </section>
+    <!-- Hero Banner -->
+    <section class="relative h-[320px] flex items-center justify-center text-center">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img src="about_city (2).png" 
+             alt="About Banner" 
+             class="w-full h-full object-cover rounded-b-[3rem] shadow-lg" />
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-white/40 to-white/90 rounded-b-[3rem]"></div>
+      </div>
 
-      <section class="bg-gray-50 py-16">
-        <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-2 gap-12 items-center">
-          <!-- Text -->
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900">Why Know Your City?</h2>
-            <p class="mt-4 text-gray-600 leading-relaxed">
-              Whether you’re a local resident or a first-time visitor, our platform helps you:
-            </p>
-            <ul class="mt-6 space-y-3 text-gray-700">
-              <li>🏰 Discover <strong>historical landmarks</strong> like Belagavi Fort and Bhimgad Wildlife Sanctuary</li>
-              <li>🌊 Explore <strong>natural wonders</strong> such as Gokak Falls and Hidkal Dam</li>
-              <li>🍮 Taste authentic delicacies like the famous <strong>Belagavi Kunda</strong> and local street food</li>
-              <li>🎉 Stay updated with <strong>local events and festivals</strong> like Khandoba Jatra and Dasara celebrations</li>
-            </ul>
-          </div>
+      <!-- Text -->
+      <div class="relative z-10 px-6">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900">
+          About
+          <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Know Your City
+          </span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-700 font-medium">
+          Welcome to <strong>Know Your City</strong>, your personal guide to exploring <strong>Belagavi</strong> like never before! 🌆✨
+        </p>
+      </div>
+    </section>
 
-          <!-- Image with overlay + text -->
-          <div class="relative rounded-2xl overflow-hidden shadow-lg">
-            <img src="belgaum_city.jpeg" 
-                 alt="Explore Belagavi" 
-                 class="w-full h-full object-cover">
-            <!-- Dark overlay -->
-            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <h3 class="text-2xl md:text-3xl font-bold text-white">Explore Belagavi</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-white py-16">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-          <h2 class="text-3xl font-bold text-gray-900">Our Mission 🚀</h2>
+    <!-- Why Section -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-6 max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900">Why Know Your City?</h2>
           <p class="mt-4 text-gray-600 leading-relaxed">
-            Our goal is to make exploring Belagavi simple, enjoyable, and unforgettable. With AI-powered recommendations, you can easily uncover the best attractions, hidden spots, local flavors, and weekend adventures — all in one place.
+            Whether you’re a local resident or a first-time visitor, our platform helps you:
           </p>
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            We are passionate about showcasing Belagavi’s vibrant culture, scenic landscapes, historic landmarks, and unique traditions. As we grow, we plan to bring this experience to neighboring areas, helping more travelers and locals connect with the beauty and spirit of the region.
-          </p>
+          <ul class="mt-6 space-y-3 text-gray-700">
+            <li>🏰 Discover <strong>historical landmarks</strong> like Belagavi Fort and Bhimgad Wildlife Sanctuary</li>
+            <li>🌊 Explore <strong>natural wonders</strong> such as Gokak Falls and Hidkal Dam</li>
+            <li>🍮 Taste authentic delicacies like the famous <strong>Belagavi Kunda</strong> and local street food</li>
+            <li>🎉 Stay updated with <strong>local events and festivals</strong> like Khandoba Jatra and Dasara celebrations</li>
+          </ul>
         </div>
-      </section>
-    </main>
+
+        <!-- Image with overlay + text -->
+        <div class="relative rounded-2xl overflow-hidden shadow-lg">
+          <img src="belgaum_city.jpeg" 
+               alt="Explore Belagavi" 
+               class="w-full h-full object-cover">
+          <!-- Dark overlay -->
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <h3 class="text-2xl md:text-3xl font-bold text-white">Explore Belagavi</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="relative py-16">
+      <!-- Gradient Background -->
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-purple-50 rounded-t-[3rem]"></div>
+      <div class="relative container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Our goal is to make exploring Belagavi simple, enjoyable, and unforgettable. With AI-powered recommendations, you can easily uncover the best attractions, hidden spots, local flavors, and weekend adventures — all in one place.
+        </p>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          We are passionate about showcasing Belagavi’s vibrant culture, scenic landscapes, historic landmarks, and unique traditions. As we grow, we plan to bring this experience to neighboring areas, helping more travelers and locals connect with the beauty and spirit of the region.
+        </p>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
