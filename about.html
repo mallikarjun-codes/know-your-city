@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - Know Your City</title>
 
   <!-- Tailwind CSS -->
@@ -21,32 +21,14 @@
       }
     }
   </script>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-        }
-      }
-    }
-  </script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
   <div class="flex flex-col min-h-screen">
 
+    <!-- Navbar -->
     <header class="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="flex items-center space-x-2">
+        <a href="home.html" class="flex items-center space-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
           </svg>
@@ -88,16 +70,22 @@
               Whether you’re a local resident or a first-time visitor, our platform helps you:
             </p>
             <ul class="mt-6 space-y-3 text-gray-700">
-              <li>🏰 Discover <strong>historical landmarks</strong> like Belagavi Fort</li>
-              <li>🌊 Explore <strong>natural wonders</strong> such as Gokak Falls</li>
-              <li>🍮 Taste authentic delicacies like the famous <strong>Belagavi Kunda</strong></li>
-              <li>🎉 Stay updated with <strong>local events and festivals</strong></li>
+              <li>🏰 Discover <strong>historical landmarks</strong> like Belagavi Fort and Bhimgad Wildlife Sanctuary</li>
+              <li>🌊 Explore <strong>natural wonders</strong> such as Gokak Falls and Hidkal Dam</li>
+              <li>🍮 Taste authentic delicacies like the famous <strong>Belagavi Kunda</strong> and local street food</li>
+              <li>🎉 Stay updated with <strong>local events and festivals</strong> like Khandoba Jatra and Dasara celebrations</li>
             </ul>
           </div>
 
-          <!-- Image -->
-          <div class="rounded-2xl overflow-hidden shadow-lg">
-            <img src="https://placehold.co/600x400/3498db/ffffff?text=Explore+Belagavi" alt="Explore Belagavi" class="w-full h-full object-cover">
+          <!-- Image with overlay + text -->
+          <div class="relative rounded-2xl overflow-hidden shadow-lg">
+            <img src="belgaum_city.jpeg" 
+                 alt="Explore Belagavi" 
+                 class="w-full h-full object-cover">
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <h3 class="text-2xl md:text-3xl font-bold text-white">Explore Belagavi</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -106,10 +94,10 @@
         <div class="container mx-auto px-6 max-w-4xl text-center">
           <h2 class="text-3xl font-bold text-gray-900">Our Mission 🚀</h2>
           <p class="mt-4 text-gray-600 leading-relaxed">
-            Our goal is to make exploring your city <strong>easy, smart, and fun</strong>. With AI-powered answers, you can instantly find the best places, hidden gems, and weekend plans — all in one place.
+            Our goal is to make exploring Belagavi simple, enjoyable, and unforgettable. With AI-powered recommendations, you can easily uncover the best attractions, hidden spots, local flavors, and weekend adventures — all in one place.
           </p>
           <p class="mt-4 text-gray-600 leading-relaxed">
-            We are starting with <strong>Belagavi</strong>, but soon we aim to expand to other cities like <strong>Hubli, Dharwad, Bangalore</strong>, and beyond.
+            We are passionate about showcasing Belagavi’s vibrant culture, scenic landscapes, historic landmarks, and unique traditions. As we grow, we plan to bring this experience to neighboring areas, helping more travelers and locals connect with the beauty and spirit of the region.
           </p>
         </div>
       </section>
