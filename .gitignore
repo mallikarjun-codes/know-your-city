@@ -1,3 +1,17 @@
-node_modules/
-*.log
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets - THIS IS THE MOST IMPORTANT LINE
+.env
+
+# Editor/IDE specific folders
+.vscode/
+.idea/
+
+# OS generated files
 .DS_Store
+Thumbs.db
